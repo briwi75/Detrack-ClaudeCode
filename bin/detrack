@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+# Check Ruby version requirement
+required_version = '3.4.6'
+current_version = RUBY_VERSION
+
+unless Gem::Version.new(current_version) >= Gem::Version.new(required_version)
+  puts "Error: This application requires Ruby #{required_version} or higher."
+  puts "Current Ruby version: #{current_version}"
+  puts "Please install Ruby #{required_version} or upgrade your Ruby version."
+  exit(1)
+end
+
+require_relative '../lib/detrack'
+
+cli = DeTrack::Commands::CLI.new
+success = cli.run(ARGV)
+exit(success ? 0 : 1)
