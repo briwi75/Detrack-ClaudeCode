@@ -1,0 +1,13 @@
+{
+  "name": "detrack-claudecode",
+  "version": "1.0.0",
+  "description": "Test App for delivery tracking created with Claude Code",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "echo \"Test app running successfully\""
+  },
+  "keywords": ["delivery", "tracking", "test", "claude"],
+  "author": "Claude",
+  "license": "MIT"
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detrack Test App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚚 Detrack Test App</h1>
+            <p>Simple delivery tracking application created with Claude Code</p>
+        </header>
+        
+        <main>
+            <section class="tracking-section">
+                <h2>Track Your Delivery</h2>
+                <div class="input-group">
+                    <input type="text" id="trackingNumber" placeholder="Enter tracking number (e.g., DT123456)">
+                    <button onclick="trackPackage()">Track Package</button>
+                </div>
+            </section>
+            
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <h3>Tracking Results</h3>
+                <div id="trackingResults" class="tracking-results"></div>
+            </section>
+            
+            <section class="demo-section">
+                <h3>Demo Tracking Numbers</h3>
+                <p>Try these sample tracking numbers:</p>
+                <ul>
+                    <li><code>DT123456</code> - Delivered</li>
+                    <li><code>DT789012</code> - In Transit</li>
+                    <li><code>DT345678</code> - Processing</li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2024 Detrack Test App - Created with Claude AI</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
